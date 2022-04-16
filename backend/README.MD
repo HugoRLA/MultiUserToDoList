@@ -45,7 +45,7 @@ return
 Get Project
 This endpoint should return the project metadata and tasks
 ```
-GET /project/{project_id}
+GET /project
 return : {
     id: project_id
     name: string
