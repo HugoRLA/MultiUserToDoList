@@ -1,8 +1,13 @@
 const projectsAPI = require('express').Router();
-var projectData = require('../data/projectsMock')
+const controllerProjects = require('../controllers/projects')
 
-projectsAPI.get('/', function(req, res) {
-  res.status(200).json(projectData)
-});
+projectsAPI.get('/', controllerProjects.getProjects)
+projectsAPI.post('/', controllerProjects.createProject)
+projectsAPI.put('/:id', controllerProjects.updateProject)
+projectsAPI.delete('/:id', controllerProjects.deleteProject)
+projectsAPI.post('/:idProject/task', controllerProjects.createTask)
+projectsAPI.put('/:idProject/task/:id_task', controllerProjects.updateTask)
+projectsAPI.delete('/:idProject/task/:id_task', controllerProjects.updateTask)
+projectsAPI.post('/:idProject/task/:id_task/completed', controllerProjects.updateTask)
 
 module.exports = projectsAPI;
