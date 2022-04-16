@@ -62,7 +62,7 @@ Update Project definition
 ```
 PUT /project/{project_id}
 body: {
-    id: project_id
+    name: string
 }
 ```
 
