@@ -1,0 +1,15 @@
+.addProject {
+  background-color: #fafafa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 30px;
+  width: 75%;
+  padding: 5px;
+}
+
+.addProject label {
+  color: #000000;
+}
