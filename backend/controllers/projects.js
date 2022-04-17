@@ -5,7 +5,7 @@ const errorProjectNotExists = {"error": "Project does not exists"}
 const errorTasktNotExists = {"error": "Task does not exists"}
 
 exports.getProjects = function (req, res) {
-    res.status(200).json(projectData)
+    res.status(200).json({"projects": projectData})
 };
 
 exports.createProject = function (req, res) {
