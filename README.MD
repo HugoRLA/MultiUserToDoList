@@ -9,3 +9,10 @@
 - Implement authenticaton API
 
 - Implement authenticaton in frontend
+
+## Run
+
+docker-compose up -d
+
+## Clean up
+docker-compose down --rmi local
