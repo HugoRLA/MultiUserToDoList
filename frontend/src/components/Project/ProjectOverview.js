@@ -33,8 +33,7 @@ const ProjectOverview = () => {
             }
         })
 
-        const data = await response.json()
-
+        fecthProjectsHandler()
     }
 
     return (
