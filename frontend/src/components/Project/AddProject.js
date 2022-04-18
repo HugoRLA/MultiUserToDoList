@@ -13,7 +13,9 @@ const AddProject = (props) => {
                 name: nameRef.current.value,
             };
 
+            nameRef.current.value = ""
             props.onAddProject(project);
+
         }
     }
 
